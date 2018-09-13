@@ -1,60 +1,21 @@
 {
-"version": "2.893",
-"homepage": "https://cygwin.com/",
-"description": "A large collection of GNU and Open Source tools which provide functionality similar to a Linux distribution on Windows",
-"architecture": {
-"64bit": {
-"url": "https://cygwin.com/setup-x86_64.exe",
-"hash": "01794f55fab26842c12e2a67fc218ad9c1a9201ccf0bf2fbd9f5815d6f20182f"
-},
-"32bit": {
-"url": "https://cygwin.com/setup-x86.exe",
-"hash": "3da0b1a5a14418abc8bb04bcbd475fe8cf25648526302dfee563de9e5c0b5ff2"
-}
-},
-"autoupdate": {
-"architecture": {
-"64bit": {
-"url": "https://cygwin.com/setup-x86_64.exe"
-},
-"32bit": {
-"url": "https://cygwin.com/setup-x86.exe"
-}
-}
-},
-"checkver": {
-"re": "<a.*href=\"/git/\\?p=cygwin-apps/setup\\.git;a=tag.*\">([\\d.]+)</a>",
-"url": "https://cygwin.com/git/?p=cygwin-apps/setup.git;a=tags"
-},
-"bin": [
-[
-"root\\bin\\bash.exe",
-"cygwin",
-"--login -i"
-]
-],
-"installer": {
-"args": [
-"--no-admin",
-"--no-desktop",
-"--local-package-dir $dir\\packages",
-"--packages default,wget,rsync",
-"--quiet-mode",
-"--root $dir\\root",
-"--site https://mirrors.kernel.org/sourceware/cygwin/"
-],
-"keep": true
-},
-"notes": "To start a Cygwin shell, type \"cygwin\"",
-"persist": [
-"packages",
-"root"
-],
-"pre_install": "new-item -itemtype directory \"$dir\\root\"; new-item -itemtype directory \"$dir\\packages\"",
-"shortcuts": [
-[
-"root\\Cygwin.bat",
-"Cygwin"
-]
-]
+   "version":"2.893",
+   "homepage":"https://cygwin.com/",
+   "description":"RSync a utility for windows used to move files. Specifically used in this case for Vagrant",
+   "extract_dir": "./",
+   "architecture":{
+      "64bit":{
+         "url":"https://sspdev5a7880425966e72a.blob.core.windows.net/devservices-public/scoop_packages/rsyn.zip",
+         "hash":"8e0d856de68fe50e75ad814427c7535f8fbd4a386d080bea59b1d1c5e02a89e3"
+      }
+   },
+   "bin":[
+      [
+         "rsync.exe",
+         "rsync"
+      ]
+   ],
+   
+   "notes":"Added to your PATH should be good to go to use with VAGRANT",
+   "pre_install":"new-item -itemtype directory \"$dir\\root\"; new-item -itemtype directory \"$dir\\packages\""
 }
