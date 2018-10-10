@@ -1,0 +1,9 @@
+{
+    "version": "v0.6.1",
+    "url": "https://rambox.pro/api/downloadCE?os=windows&filetype=zip&arch=x64",
+    "extract_dir": "//",
+    "bin": [
+            "Rambox.exe", [  "Rambox.exe", "Rambox" ]
+        ],
+    "hash": "a7e8099621f4bbd01a4952fa1de1cc884c7b5bbecd29cd01bf2dd4dd45a418d0"
+}
