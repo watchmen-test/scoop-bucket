@@ -1,0 +1,10 @@
+{
+    "version": "v2.5",
+    "url": "https://github.com/jgm/pandoc/releases/download/2.5/pandoc-2.5-windows-x86_64.zip",
+    "extract_dir": "//",
+    "bin": [
+             "pandoc.exe", [  "pandoc.exe", "pandoc" ],
+             "pandoc-citeproc.exe", [  "pandoc-citeproc.exe", "pandoc-citeproc" ]
+        ],
+    "hash": "5d0e151333b58c2242d7a96d308248b454a6c33e0d5e96d7aa8435a72dfa00cd"
+}
