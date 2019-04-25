@@ -11,8 +11,7 @@
               "args": ["/S"]
           },
           "uninstaller": {
-              "url": "C:\\salt\\uninst.exe",
-              "args": ["/S"]
+             "script": "&{ C:\\salt\\uninst.exe /S }"
           }
        }
     },
