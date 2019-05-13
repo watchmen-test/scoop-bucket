@@ -1,0 +1,22 @@
+{
+    "version":"2018.3.3",
+    "homepage":"https://saltstack.com/",
+    "description":"Utility for running jobs in saltstack on a windows machine.",
+    "extract_dir": "./",
+    "architecture":{
+       "64bit":{
+          "url":"https://repo.saltstack.com/windows/Salt-Minion-2018.3.4-Py3-AMD64-Setup.exe",
+          "hash":"sha256:776F363F7168132AA7E3892612E0DE071E18C723211B247B64AAB3322817620A",
+          "installer" : {
+              "args": ["/S"]
+          },
+          "uninstaller": {
+             "script": "&{ C:\\salt\\uninst.exe /S }"
+          }
+       }
+    },
+    
+    "notes":"Added to your PATH should be good to go to use with VAGRANT",
+    "pre_install":"new-item -itemtype directory \"$dir\\root\"; new-item -itemtype directory \"$dir\\packages\""
+ }
+ 
