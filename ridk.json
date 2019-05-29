@@ -8,8 +8,7 @@
         "args": ["/SILENT", "/VERYSILENT"]
     },
     "uninstaller": {
-        "file": "C:\\Ruby26-x64\\unins000.exe",
-        "args": ["/SUPPRESSMSGBOXES", "/VERYSILENT", "/SILENT"]
+        "script": "&{ C:\\Ruby26-x64\\unins000.exe /SUPPRESSMSGBOXES /SILENT /VERYSILENT }"
     },
     "post_install":[
         "C:\\Ruby26-x64\\bin\\ridk.cmd install 1",
