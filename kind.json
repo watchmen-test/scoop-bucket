@@ -1,0 +1,14 @@
+{
+    "version": "1.0",
+    "url": "https://github.com/kubernetes-sigs/kind/releases/download/v0.8.1/kind-windows-amd64",
+    "pre_install" : [
+        "Copy-Item $original_dir/kind-windows-amd64 $original_dir/kind.exe"
+    ],
+    "bin":[
+        "kind.exe",
+        [
+            "kind.exe"
+        ]
+    ],
+    "hash": "sha256:10d0a4adc7485a0525831b2cd67062dd75d551ec0133f09e3a7d2b2674f7efc5"
+}
