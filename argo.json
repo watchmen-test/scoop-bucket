@@ -1,0 +1,14 @@
+{
+    "version": "1.0",
+    "url": "https://github.com/argoproj/argo/releases/download/v2.7.6/argo-windows-amd64",
+    "pre_install" : [
+        "Copy-Item $original_dir/argo-windows-amd64 $original_dir/argo.exe"
+    ],
+    "bin":[
+        "argo.exe",
+        [
+            "argo.exe"
+        ]
+    ],
+    "hash": "sha256:6bba05a9ccee28fdf1ecc499be12b7f556df29a7c039c7ba2969d7a3e9a53cc6"
+}
