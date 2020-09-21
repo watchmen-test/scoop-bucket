@@ -1,0 +1,8 @@
+{
+    "version": "2.1",
+    "license": "Apache-2.0",
+    "homepage": "https://pypi.org/project/gitman/",
+    "depends" : ["python"],
+    "url": "",
+    "hash": "sha256:081fd16741470cc48748db06be14b5bd80f85bc758df54f254723eb671e9cd84"
+}
