@@ -1,0 +1,9 @@
+{
+    "version": "v0.12.5",
+    "url": "https://github.com/bitnami-labs/sealed-secrets/releases/download/v0.12.5/kubeseal.exe",
+    "extract_dir": "//",
+    "bin": [
+             "kubeseal.exe", [  "kubeseal.exe", "kubeseal" ]
+        ],
+    "hash": "261a627b215b7d54c7442f8036f02d602a0c95c5211a95d33a512574131dffdd"
+}
